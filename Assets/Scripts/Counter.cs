@@ -38,7 +38,7 @@ public class Counter : MonoBehaviour
     {
         var delay = new WaitForSeconds(0.5f);
 
-        while (true)
+        while (enabled)
         {
             OnChange?.Invoke(++_counter);
             yield return delay;
